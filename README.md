@@ -13,8 +13,8 @@
 
 | Model Type  | Training Loss | Test Set Performance |
 |-------------|--------------|----------------------|
-| Odd Layer   |              |                      |
-| Even Layer  |              |                      |
+| Odd Layer   |      0.2943        |        0.8900              |
+| Even Layer  |0.2851              |  0.8836                    |
 | LoRA        |              |                      |
 
 ### Task 5: Web Application
