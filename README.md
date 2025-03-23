@@ -33,3 +33,10 @@ These results suggest that for applications prioritizing performance over parame
 <img width="1440" alt="Screenshot 2568-03-23 at 5 10 24 PM" src="https://github.com/user-attachments/assets/80fe071a-83ed-490e-8b2b-bce9b5b4b9ea" />
 <img width="1440" alt="Screenshot 2568-03-23 at 5 10 34 PM" src="https://github.com/user-attachments/assets/037423fb-9ac0-4191-af26-6e244c995ea6" />
 Link to my VDO: https://youtu.be/3aZegzbznyk
+
+### Appendix
+![output_odd](https://github.com/user-attachments/assets/de39c881-9fd1-417a-aa50-1eaddfe6eda9)
+![output_lora](https://github.com/user-attachments/assets/685de207-136f-4bb8-99c3-35be8a46b1f1)
+![output_even](https://github.com/user-attachments/assets/f723d245-e0d5-4db9-ab2b-a2ecbbbc3096)
+![output_compare](https://github.com/user-attachments/assets/ea16f868-4076-47ea-90e4-95a7bab198ea)
+
