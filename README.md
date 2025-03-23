@@ -11,6 +11,11 @@
   
 ### Task 4: Evaluation and Analysis
 
+| Model Type  | Training Loss | Test Set Performance |
+|-------------|--------------|----------------------|
+| Odd Layer   |              |                      |
+| Even Layer  |              |                      |
+| LoRA        |              |                      |
 
 ### Task 5: Web Application
 <img width="1440" alt="Screenshot 2568-03-23 at 5 10 12 PM" src="https://github.com/user-attachments/assets/14b93a9f-b112-490d-aefd-ed0953ce2561" />
