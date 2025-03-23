@@ -45,7 +45,7 @@ This misclassification highlights a critical gap between test set performance me
 
 2. Context sensitivity plays a crucial role. The Odd Layer model, while preserving important knowledge from specific layers, may have lost contextual understanding that would help it correctly classify straightforward expressions of hate.
 
-3. The distillation process itself might have prioritized certain features over others, inadvertently diminishing the importance of common negative expressions in favor of more subtle patterns that performed well on the specific test set.
+3. The distillation process might have focused more on certain features and ignored some common negative expressions. Instead, it may have picked up on subtle patterns that worked well for the specific test set.
 
 ### Appendix
 ![output_odd](https://github.com/user-attachments/assets/de39c881-9fd1-417a-aa50-1eaddfe6eda9)
