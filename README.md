@@ -37,7 +37,7 @@ Link to my VDO: https://youtu.be/3aZegzbznyk
 
 #### Web Application Discussion
 
-The implementation of the Odd Layer distillation model in our sentiment analysis web app revealed an interesting challenge in hate speech detection. Despite achieving the highest test performance (0.9020) compared to the Even Layer (0.8980) and LoRA models (0.8520), it incorrectly classifies clearly hateful content like "I hate you" as non-hateful.
+The implementation of the Odd Layer distillation model in our sentiment analysis web app revealed an interesting challenge in hate speech detection. Despite achieving the highest test performance (0.9020) compared to the Even Layer (0.8980) and LoRA models (0.8520), it incorrectly classifies clearly hateful content like "I hate you" as noHate.
 
 This misclassification highlights a critical gap between test set performance metrics and real-world application. Several factors may explain this phenomenon:
 
