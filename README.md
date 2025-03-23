@@ -6,9 +6,9 @@
   2. Train the student model using the even layers {2, 4, 6, 8, 10, 12} from the 12-layer teacher to the 6-layer student.
      Here's the code:
      <img width="1101" alt="Screenshot 2568-03-23 at 4 07 30 PM" src="https://github.com/user-attachments/assets/b7f7e38a-0b34-43ca-84eb-135224a0a5ee" />
-     
+  3. To implement LoRA for a 12-layer student model, start by loading a pre-trained BERT model using the AutoModelForSequenceClassification class. Configure the LoRA parameters with a LoraConfig object, ensuring you specify the appropriate task type as SEQ_CLS for sequence classification rather than CAUSAL_LM. Set key hyperparameters including rank (r=8), scaling factor (lora_alpha=16), and dropout rate (lora_dropout=0.1), while explicitly targeting the attention matrices ("query", "key", "value") for efficient fine-tuning. Apply this configuration using get_peft_model() and check trainable parameters with print_trainable_parameters(). Set up an AdamW optimizer with a small learning rate (2e-5) and weight decay (0.01), paired with a linear learning rate scheduler that includes a 10% warmup period. When implementing the training loop, move the model and batches to the appropriate device, calculate loss through forward passes, and update parameters with backward passes while tracking progress. This approach significantly reduces memory requirements compared to full fine-tuning while providing targeted adaptation of the model to your specific task.
+  
 ### Task 3: Evaluation and Analysis
-
 | Model Type  | Training Loss | Test Set Performance |
 |-------------|--------------|----------------------|
 | Odd Layer   |      0.2944       |        0.9020              |
