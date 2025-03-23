@@ -7,7 +7,7 @@
      Here's the code:
      <img width="1101" alt="Screenshot 2568-03-23 at 4 07 30 PM" src="https://github.com/user-attachments/assets/b7f7e38a-0b34-43ca-84eb-135224a0a5ee" />
 ### Task 3: LoRA (Low-Rank Adaptation)
-- Implement to train 12 layer student.
+- I am using LoRA 
   
 ### Task 4: Evaluation and Analysis
 
