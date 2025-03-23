@@ -1,4 +1,4 @@
-#### A7: Training Distillation vs LoRA
+# A7: Training Distillation vs LoRA
 #### Submitted by: Patsachon Pattakulpong st124952 
 ### Task 1: Hate Speech Dataset that i use: https://huggingface.co/datasets/SetFit/hate_speech18
 ### Task 2: Train the student model 
