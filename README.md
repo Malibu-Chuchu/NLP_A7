@@ -34,12 +34,10 @@ These results suggest that for applications prioritizing performance over parame
 <img width="1440" alt="Screenshot 2568-03-23 at 5 10 24 PM" src="https://github.com/user-attachments/assets/80fe071a-83ed-490e-8b2b-bce9b5b4b9ea" />
 <img width="1440" alt="Screenshot 2568-03-23 at 5 10 34 PM" src="https://github.com/user-attachments/assets/037423fb-9ac0-4191-af26-6e244c995ea6" />
 Link to my VDO: https://youtu.be/3aZegzbznyk
-
-- The implementation of the Odd Layer distillation model in your sentiment analysis web app has revealed an interesting challenge in hate speech detection. Despite this model achieving the highest test performance (0.9020) compared to the Even Layer (0.8980) and LoRA models (0.8520), it incorrectly classifies clearly hateful content like "I hate you" as non-hateful.
-This misclassification highlights a critical gap between test set performance metrics and real-world application. Several factors may explain this phenomenon:
-First, the training data likely contained an imbalance or bias in how hate speech was represented. The model might have learned to associate hate speech with more complex or specific patterns rather than direct expressions like "I hate you."
-Second, context sensitivity plays a crucial role. The Odd Layer model, while preserving important knowledge from specific layers, may have lost contextual understanding that would help it correctly classify straightforward expressions of hate.
-Third, the distillation process itself might have prioritized certain features over others, inadvertently diminishing the importance of common negative expressions in favor of more subtle patterns that performed well on the specific test set.
+#### Web application Discussion
+- The implementation of the Odd Layer distillation model in your sentiment analysis web app has revealed an interesting challenge in hate speech detection. Despite this model achieving the highest test performance (0.9020) compared to the Even Layer (0.8980) and LoRA models (0.8520), it incorrectly classifies clearly hateful content like "I hate you" as noHate.
+This misclassification highlights a critical gap between test set performance metrics and real-world application. Several factors may explain this phenomenon: - 1) the training data likely contained an imbalance or bias in how hate speech was represented. The model might have learned to associate hate speech with more complex or specific patterns rather than direct expressions like "I hate you."
+- 2) context sensitivity plays a crucial role. The Odd Layer model, while preserving important knowledge from specific layers, may have lost contextual understanding that would help it correctly classify straightforward expressions of hate. - 3) the distillation process itself might have prioritized certain features over others, inadvertently diminishing the importance of common negative expressions in favor of more subtle patterns that performed well on the specific test set.
 
 ### Appendix
 ![output_odd](https://github.com/user-attachments/assets/de39c881-9fd1-417a-aa50-1eaddfe6eda9)
