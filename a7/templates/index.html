@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toxic Text Classifier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    }
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 100%;
+      border: 3px solid #ff7e5f;
+    }
+    h1 {
+      color: #ff7e5f;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    textarea {
+      width: 95%;
+      height: 120px;
+      padding: 12px;
+      border: 2px solid #ff7e5f;
+      border-radius: 12px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      background-color: #fef8f5;
+      resize: vertical;
+    }
+    button {
+      background-color: #ff7e5f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #feb47b;
+    }
+    .response-box {
+      background-color: #ffefd5;
+      padding: 20px;
+      border: 2px solid #ff7e5f;
+      border-radius: 12px;
+      margin-top: 25px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .response-box h2 {
+      color: #ff7e5f;
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+    .response-box p {
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>A7 Hate Speech Detection</h1>
+    <form method="POST" action="/">
+      <label for="prompt" style="color: #ff7e5f; font-weight: bold;">Enter your text:</label><br>
+      <textarea id="prompt" name="prompt" required>{{ prompt if prompt else '' }}</textarea><br>
+      <button type="submit">Predict</button>
+    </form>
+
+    {% if response %}
+      <div class="response-box">
+        <h2>Prediction:</h2>
+        <p>{{ response }}</p>
+      </div>
+    {% endif %}
+  </div>
+</body>
+</html>
